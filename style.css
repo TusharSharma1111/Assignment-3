@@ -4,6 +4,7 @@ h1, h2 {
 }
 body {
     background: (whitesmoke);
+    font-family: Arial;
     height:100px;
     margin:0;
     background-repeat: no-repeat;
