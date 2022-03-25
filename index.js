@@ -72,7 +72,7 @@ function purchase()
             reciept += `<tr><td>Ladder</td><td>${Garden}</td><td>$13</td><td>$${Garden * 13}</td></tr>`;
         }
         if (Cycle > 0) {
-            total += Cycle * 20;
+            total += Cycle * 18;
             reciept += `<tr><td>Cycle</td><td>${Cycle}</td><td>$18</td><td>$${Cycle * 18}</td></tr>`;
         }
         if (MotorOil > 0) {
