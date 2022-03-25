@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Sale Fundraiser</title>
+    <script src="index.js"></script>  <!-- Reffering to external javascript file-->
+    <link rel="stylesheet" href="style.css"> <!-- Reffering to external css file-->
+</head>
+
+<body>
+    <h1>Garage Sale Fundraiser</h1>      <!--Heading of the event fundraiser-->
+    <h2>Raising money for Families affected by Flood</h2>  <!--Reason for fundraiser-->
+    <form id="fundRaiser" onsubmit="return purchase();" method="POST" action="">   <!-- First form to take user details and purchasing items-->
+        <div class="fieldwrapper">
+            <label for="fullName">Name:</label>  <!-- Field for customer Name-->
+            <input type="text" name="fullName" id="fullName" placeholder="Firstname Lastname">
+        </div>
+        <div class="fieldwrapper">
+            <label for="emailId">Email:</label> <!-- Field for customer email-->
+            <input type="email" name="emailId" id="emailId" placeholder="email@domain.com">
+        </div>
+        <div class="fieldwrapper">
+            <label for="creditCard">Credit Card Number:</label> <!-- Fields for customer payment details-->
+            <input type="text" name="creditCard" id="creditCard" placeholder="xxxx-xxxx-xxxx-xxxx">
+        </div>
+        <div class="fieldwrapper"> <!-- Dropdown for selecting credit card expiry month-->
+            <label for="cardMonth">Credit Card Expiry Month:</label>
+            <select name="cardMonth" id="cardMonth">
+                <option value=''>----- Select -----</option>
+                <option value="JAN">JAN</option>
+                <option value="FEB">FEB</option>
+                <option value="MAR">MAR</option>
+                <option value="APR">APR</option>
+                <option value="MAY">MAY</option>
+                <option value="JUN">JUN</option>
+                <option value="JUL">JUL</option>
+                <option value="AUG">AUG</option>
+                <option value="SEP">SEP</option>
+                <option value="OCT">OCT</option>
+                <option value="NOV">NOV</option>
+                <option value="DEC">DEC</option>
+            </select>
+        </div>
+        <div class="fieldwrapper">
+            <label for="cardYear">Credit Card Expiry Year:</label>
+            <input type="text" name="cardYear" id="cardYear" placeholder="YYYY">
+        </div>
+        <div class="headingwrapper">
+            <h3>
+                Buy generously
+            </h3>
+        </div>
+        <div class="fieldwrapper">  <!-- Fields for Purchasing items-->
+            <label for="basket">Basket ($10):</label>
+            <input type="text" name="basket" id="basket" placeholder="5">
+        </div>
+        <div class="fieldwrapper">
+            <label for="garden">Garden ($13):</label>
+            <input type="text" name="ladder" id="garden" placeholder="5">
+        </div>
+        <div class="fieldwrapper">
+            <label for="cycle">Cycle ($18):</label>
+            <input type="text" name="cycle" id="cycle" placeholder="5">
+        </div>
+        <div class="fieldwrapper">
+            <label for="motoroil">Motoroil ($21):</label>
+            <input type="text" name="motoroil" id="motoroil" placeholder="5">
+        </div>
+        <div class="fieldwrapper">
+            <label for="bighammer">Bighammer ($7):</label>
+            <input type="text" name="bighammer" id="bighammer" placeholder="5">
+        </div>
+        <div class="fieldwrapper">
+            <label for="skateboard">Skateboard ($6):</label>
+            <input type="text" name="skateboard" id="skateboard" placeholder="5">
+        </div>
+        <div class="submitwrapper"> <!-- Checkout Button-->
+            <input type="submit" value="Checkout">
+        </div>
+        <p id='errors'></p> <!-- Paragraph to show errors while submitting form-->
+    </form>
+    <form id="receipt"> <!-- Second form to display customer details and receipt-->
+        <p id="result"></p>
+        <table id='userDet'></table> <!-- Table to show user details in tabular format-->
+        <table id='receiptTable'></table> <!-- Table to show receipt in tabular format-->
+    </form>
+</body>
+</html>

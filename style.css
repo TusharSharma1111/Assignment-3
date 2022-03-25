@@ -1,0 +1,76 @@
+
+h1, h2 {
+    text-align: center;
+}
+body {
+    background: (whitesmoke);
+    height:100px;
+    margin:0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+form {    /* Css for form elements*/
+    background-color: #dadbca38;
+    width: 450px;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px gray;
+    margin-bottom: 10px;
+}
+
+#fundRaiser { /* css to show or hide the form element*/
+    display: block;
+}
+
+#receipt {  /* css to show or hide the form element*/
+    display: none;
+}
+
+.fieldwrapper {
+    margin: 15px 0;
+}
+.fieldwrapper label {  /*Css for form labels*/
+    width: 50%;
+    margin: 0 1%;
+    display: inline-block;
+    font-weight: bold;
+}
+.fieldwrapper input { /* Css for form input fields*/
+    width: 42%;
+    margin: 0 1%;
+    padding: 5px;
+    display: inline-block;
+}
+.fieldwrapper select { /* Css for dropdown*/
+    width: 203px;
+    margin: 0 1%;
+    display: inline-block;
+    padding: 5px;
+}
+.submitwrapper input { /* Css for Checkout button*/
+    margin: 0 42%;
+}
+.headingwrapper {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+table { /* Css for tables*/
+    margin: 20px;
+    width: 410px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table td {
+    text-align: center;
+    border: 2px solid black;
+}
+
+p {  /* Css for paragraph element*/
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
